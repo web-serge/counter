@@ -1,0 +1,17 @@
+.screen {
+    border: 2px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    justify-content: space-between;
+    min-height: 187px;
+
+    & small {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+}

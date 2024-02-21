@@ -1,0 +1,69 @@
+@import "../../root.css";
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    padding: 5px 10px;
+    position: relative;
+    border: 2px solid var(--main-color);
+    background: transparent;
+    transition: 300ms;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    outline: none;
+    letter-spacing: 2px;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        inset: 0;
+        background: var(--main-color);
+        transform: scale(0);
+        opacity: 0;
+        transition: 300ms;
+        z-index: -1;
+    }
+
+    &:disabled {
+        pointer-events: none;
+    }
+
+    &:hover {
+        color: white;
+    }
+
+    &:hover:before,
+    &:focus-visible:before {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    & i {
+        position: relative;
+    }
+
+    &:active i {
+        color: crimson;
+    }
+}
+
+.button-row {
+    display: flex;
+
+    & button {
+        flex: 1;
+    }
+
+    & button:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+
+    & button:last-child {
+        border-radius: 0 5px 5px 0;
+    }
+}

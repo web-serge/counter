@@ -1,0 +1,9 @@
+.options {
+    width: 300px;
+    border: 2px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 5px;
+}
