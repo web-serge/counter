@@ -16,6 +16,7 @@ button {
     outline: none;
     letter-spacing: 2px;
     overflow: hidden;
+    border-radius: 5px;
 
     &:before {
         content: '';
@@ -31,6 +32,8 @@ button {
 
     &:disabled {
         pointer-events: none;
+        /*opacity: 50%;*/
+        border: 2px solid grey;
     }
 
     &:hover {
@@ -57,6 +60,7 @@ button {
 
     & button {
         flex: 1;
+        border-radius: 0;
     }
 
     & button:first-child {
@@ -65,5 +69,14 @@ button {
 
     & button:last-child {
         border-radius: 0 5px 5px 0;
+    }
+
+    & .input-box {
+        flex-basis: 65%;
+
+        & input {
+            border-radius: 0;
+            border-color: var(--main-color);
+        }
     }
 }

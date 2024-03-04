@@ -9,9 +9,20 @@
     justify-content: space-between;
     min-height: 187px;
 
+    & strong {
+        font-size: 30px;
+        color: white;
+
+        &.active {
+            color: crimson;
+        }
+    }
+
     & small {
         flex-grow: 1;
         display: flex;
         align-items: center;
+        color: crimson;
+        text-align: center;
     }
 }

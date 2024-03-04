@@ -2,7 +2,7 @@ import React, {ButtonHTMLAttributes} from 'react';
 import './button.css'
 
 type ButtonType = {
-    name?: string | undefined
+    name?: string
     icon?: string
     onClick: () => void
 } & ButtonHTMLAttributes<HTMLButtonElement>
